@@ -3,7 +3,7 @@
 
 <suite name="Amazon Get Title" parallel="tests">
 
-    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="useCloudEnv" value="true"/>
     <parameter name="cloudEnvName" value="browserstack"/>
     <parameter name="os" value="Windows"/>
     <parameter name="os_version" value="10"/>
@@ -14,7 +14,7 @@
     <test name = "Amazon Get Title">
         <classes>
                 <class name="searchitems.DropDownMenuSearch"/>
-                <class name="searchitems.SearchItems"/>
+                <!-- <class name="searchitems.SearchItems"/>-->
                 <!--<class name="searchitems.SearchItemsWithDatabaseDataSource"/>-->
         </classes>
     </test>
