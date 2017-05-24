@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Amazon Get Title" parallel="tests">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserVersion" value="53.0.2"/>
+    <parameter name="url" value="https://www.amazon.com/"/>
+
+    <test name = "Amazon Get Title">
+        <classes>
+                <class name="searchitems.DropDownMenuSearch"/>
+                <class name="searchitems.SearchItems"/>
+                <!--<class name="searchitems.SearchItemsWithDatabaseDataSource"/>-->
+        </classes>
+    </test>
+
+</suite>
